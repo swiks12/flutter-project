@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class Donation extends StatefulWidget {
@@ -20,12 +18,13 @@ class _DonationState extends State<Donation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Donations'),),
+      appBar: AppBar(title: const Text('Donations'),
+      backgroundColor: const Color(0XFFACBCFF),),
       body: Container(
          decoration: const BoxDecoration(
                       image: DecorationImage(
-                      image: AssetImage("images/paw1end.png"),
-                      // fit: BoxFit.cover,
+                      image: AssetImage("images/moneyPig.jpg"),
+                      fit: BoxFit.cover,
                       ),
                       ),
         child: Padding(
@@ -35,6 +34,8 @@ class _DonationState extends State<Donation> {
               children: [
                 const SizedBox(height: 10,),
                TextField(
+                style: TextStyle(
+                ),
                     controller: mycontroller,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
@@ -49,18 +50,23 @@ class _DonationState extends State<Donation> {
                 SizedBox(
                   height: 40,
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: (){
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0XFFACBCFF)
+                    ),
+                    onPressed: (){
                     setState(() {
                             amount=mycontroller.text;
                             amount.isEmpty? _validate=true :_validate=false;
                           });
-                          Text('Donated amount: $amount',style: const TextStyle(
-                  fontSize: 20
-                ),);
+                          
                           
                   }, child: const Text('Donate')),
                 ),
                 const SizedBox(height: 40,),
+                Text('Donated amount: $amount',style: const TextStyle(
+                  fontSize: 20,
+                ),)
                 
                 
               ],

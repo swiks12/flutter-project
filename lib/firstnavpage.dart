@@ -1,5 +1,6 @@
 import 'package:adopt_me/donations.dart';
 import 'package:adopt_me/home.dart';
+import 'package:adopt_me/landingDog.dart';
 import 'package:flutter/material.dart';
  class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -11,7 +12,7 @@ import 'package:flutter/material.dart';
 class _Home1State extends State<Home1> {
   List pages=[
     HomePage(),
-    Donation(),
+    LandingDog(),
     Donation(),
 
   
