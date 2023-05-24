@@ -1,4 +1,6 @@
-import 'package:adopt_me/dog1.dart';
+import 'package:adopt_me/bella.dart';
+import 'package:adopt_me/bruno.dart';
+import 'package:adopt_me/kale.dart';
 import 'package:adopt_me/luna.dart';
 import 'package:flutter/material.dart';
 class LandingDog extends StatefulWidget {
@@ -58,7 +60,9 @@ class _LandingDogState extends State<LandingDog> {
                                   SizedBox(
                                     height: 20,
                                     child: 
-                                    ElevatedButton(onPressed: (){},style: ElevatedButton.styleFrom(
+                                    ElevatedButton(onPressed: (){
+                                      Navigator.push(context,MaterialPageRoute(builder: (context)=>const Kale()));
+                                    },style: ElevatedButton.styleFrom(
                                       backgroundColor: const Color(0XFF4A467D)
                                     ), child: const Text('View more'),
                                     
@@ -80,7 +84,7 @@ class _LandingDogState extends State<LandingDog> {
                                   const SizedBox(height: 20,),
                                   const CircleAvatar(
                                     radius: 50,
-                                    backgroundImage: AssetImage('images/mybruno.jpg'),
+                                    backgroundImage: AssetImage('images/germanShepherd.jpg'),
 
                                   ),
                                   const SizedBox(height: 10,),
@@ -89,7 +93,9 @@ class _LandingDogState extends State<LandingDog> {
                                   SizedBox(
                                     height: 20,
                                     child: 
-                                    ElevatedButton(onPressed: (){},style: ElevatedButton.styleFrom(
+                                    ElevatedButton(onPressed: (){
+                                      Navigator.push(context,MaterialPageRoute(builder: (context)=>const Bruno()));
+                                    },style: ElevatedButton.styleFrom(
                                       backgroundColor: const Color(0XFF4A467D)
                                     ), child: const Text('View more'),
                                     ),
@@ -159,10 +165,13 @@ class _LandingDogState extends State<LandingDog> {
                                   SizedBox(
                                     height: 20,
                                     child: 
-                                    ElevatedButton(onPressed: (){}, child: const Text('View more'),
+                                    ElevatedButton(onPressed: (){
+                                      Navigator.push(context,MaterialPageRoute(builder: (context)=>const Bella()));
+                                    }, 
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: const Color(0XFF4A467D)
                                     ),
+                                    child: const Text('View more'),
                                     )
                                     ,)
                                 ],

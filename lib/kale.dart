@@ -1,25 +1,23 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
- class Luna extends StatefulWidget {
-  const Luna({super.key});
+ class Kale extends StatefulWidget {
+  const Kale({super.key});
 
   @override
-  State<Luna> createState() => _LunaState();
+  State<Kale> createState() => _KaleState();
 }
 
-class _LunaState extends State<Luna> {
+class _KaleState extends State<Kale> {
   showAlertDialog(BuildContext context){
     //setting up the buttons
     Widget okbtn=ElevatedButton(
       onPressed: (){}, 
       style: ElevatedButton.styleFrom(
-        backgroundColor:const Color(0XFFA9A3EA),
+        backgroundColor:Color.fromARGB(255, 96, 110, 162),
          ),
         child: const Text('Ok'),
          );
     AlertDialog alert=AlertDialog(
-      backgroundColor: const Color(0XFFE1D8EF),
+      backgroundColor:const Color(0XFFACBCFF),
       title: const Text('Alert Dialogue'),
       content: const Text('You will be further contacted.'),
       actions: [
@@ -51,7 +49,7 @@ class _LunaState extends State<Luna> {
                   height: 170,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: const Color(0XFFA9A3EA),
+                    color: Color.fromARGB(255, 104, 121, 181),
                     borderRadius: BorderRadius.circular(20.0)
                   ),
                 ),
@@ -62,7 +60,7 @@ class _LunaState extends State<Luna> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24.0),
-                        color: const Color(0XFFE1D8EF)
+                        color: const Color(0XFFACBCFF)
                       ),
                       child: Column(
                         children: [
@@ -74,13 +72,13 @@ class _LunaState extends State<Luna> {
                               decoration:  BoxDecoration(
                                 borderRadius: BorderRadius.circular(24.0),
                                  image: const DecorationImage(
-                                image: AssetImage("images/myLuna.jpg"),
+                                image: AssetImage("images/kale.jpg"),
                                 fit: BoxFit.cover,
                                  ),
                               ),
                             ),
                           ),
-                          const Text('Luna-(female)',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
+                          const Text('Kale-(male)',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
                         ],
                       ),               
                   ),
@@ -96,7 +94,7 @@ class _LunaState extends State<Luna> {
                         height: 150,
                     width:150,
                     decoration: BoxDecoration(
-                    color:  const Color.fromARGB(255, 211, 198, 233),
+                    color:  const Color(0XFFACBCFF),
                     borderRadius: BorderRadius.circular(24.0)
                     ),
                     child: Column(
@@ -104,7 +102,7 @@ class _LunaState extends State<Luna> {
                         SizedBox(height: 20,),
                          Text('Age',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                         SizedBox(height: 20,),
-                        Text('5 months old',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                        Text('5 years old',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                          
                       ],
                     ),
@@ -114,7 +112,7 @@ class _LunaState extends State<Luna> {
                     height:150,
                     width:150,
                     decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 211, 198, 233),
+                    color: const Color(0XFFACBCFF),
                     borderRadius: BorderRadius.circular(24.0)
                     ),
                     child: Column(
@@ -122,7 +120,7 @@ class _LunaState extends State<Luna> {
                         SizedBox(height: 20,),
                          Text('Breed',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                           SizedBox(height: 20,),
-                        Text('Manx Cat',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                        Text('Local Dog',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                          
                       ],
                     ),
@@ -136,7 +134,7 @@ class _LunaState extends State<Luna> {
                   height:170,
                   width:350,
                   decoration: BoxDecoration(
-                  color:  const Color.fromARGB(255, 211, 198, 233),
+                  color:  const Color(0XFFACBCFF),
                   borderRadius: BorderRadius.circular(24.0)
                   ),
                   child: Column(
@@ -146,7 +144,7 @@ class _LunaState extends State<Luna> {
                           SizedBox(height: 5,),
                         Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('Meet Luna, an adorable and affectionate cat ready to bring joy to your home! Luna with her playful nature and gentle demeanor is the perfect companion for cuddling up on the couch or entertaining you with her charming antics.',style: TextStyle(fontSize: 16),),
+                          child: Text('Meet Kale, an adorable and energetic dog seeking a loving forever home!Kale is ready to be your loyal companion on outdoor adventures and cozy snuggle sessions alike. Dont miss the opportunity to bring this bundle of joy into your family!',style: TextStyle(fontSize: 16),),
                         )
                          
                       ],
@@ -159,7 +157,7 @@ class _LunaState extends State<Luna> {
                   child: ElevatedButton(onPressed: (){
                     final snackBar= SnackBar(content: Text('Request for adoption sent.'),
                                 duration: Duration(seconds: 1),
-                                backgroundColor: const Color(0XFFA9A3EA),
+                                backgroundColor: Color.fromARGB(255, 96, 110, 162),
                                 );
                                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
                      showAlertDialog(context);
@@ -167,7 +165,7 @@ class _LunaState extends State<Luna> {
 
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0XFFA9A3EA)
+                    backgroundColor: Color.fromARGB(255, 96, 110, 162)
                   ), child: const Text('Adopt',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
                   ),
                   ),
@@ -177,7 +175,7 @@ class _LunaState extends State<Luna> {
                         Navigator.pop(context);
                       }, icon: const Icon(Icons.arrow_back), label: const Text('Back',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0XFFA9A3EA)
+                        backgroundColor: const Color.fromARGB(255, 96, 110, 162)
                       ),
                       ),
             ],

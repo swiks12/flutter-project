@@ -1,14 +1,12 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
- class Luna extends StatefulWidget {
-  const Luna({super.key});
+ class Bella extends StatefulWidget {
+  const Bella({super.key});
 
   @override
-  State<Luna> createState() => _LunaState();
+  State<Bella> createState() => _BellaState();
 }
 
-class _LunaState extends State<Luna> {
+class _BellaState extends State<Bella> {
   showAlertDialog(BuildContext context){
     //setting up the buttons
     Widget okbtn=ElevatedButton(
@@ -74,13 +72,13 @@ class _LunaState extends State<Luna> {
                               decoration:  BoxDecoration(
                                 borderRadius: BorderRadius.circular(24.0),
                                  image: const DecorationImage(
-                                image: AssetImage("images/myLuna.jpg"),
+                                image: AssetImage("images/bella.jpg"),
                                 fit: BoxFit.cover,
                                  ),
                               ),
                             ),
                           ),
-                          const Text('Luna-(female)',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
+                          const Text('Bella-(female)',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
                         ],
                       ),               
                   ),
@@ -104,7 +102,7 @@ class _LunaState extends State<Luna> {
                         SizedBox(height: 20,),
                          Text('Age',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                         SizedBox(height: 20,),
-                        Text('5 months old',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                        Text('4 years old',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                          
                       ],
                     ),
@@ -146,7 +144,7 @@ class _LunaState extends State<Luna> {
                           SizedBox(height: 5,),
                         Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('Meet Luna, an adorable and affectionate cat ready to bring joy to your home! Luna with her playful nature and gentle demeanor is the perfect companion for cuddling up on the couch or entertaining you with her charming antics.',style: TextStyle(fontSize: 16),),
+                          child: Text('Meet Bella, a graceful and affectionate cat in search of her forever home! With her striking beauty and gentle nature, Bella is the purrfect companion for cozy evenings and warm snuggles. Dont miss the chance to bring this loving feline into your life!',style: TextStyle(fontSize: 16),),
                         )
                          
                       ],
