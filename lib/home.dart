@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 350,
+                  height: 500,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24.0),
@@ -36,15 +36,18 @@ class _HomePageState extends State<HomePage> {
                         backgroundImage: AssetImage('images/closeupLogo.png'),
                       ),
                       SizedBox(height:20),
-                      Text('data')
-
-                      
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        
+                          child: Text('Forever Homes Animal Adoption has been dedicated to finding loving and permanent homes for animals in need since its establishment in 2015. With a passion for animal welfare and a commitment to their well-being, the organization has tirelessly worked to match countless furry friends with compassionate adoptive families. Through their comprehensive adoption process, they ensure that each animal receives the care and attention they deserve, creating successful and lasting connections between pets and their forever homes. Forever Homes Animal Adoption continues to make a positive impact on the lives of animals, making dreams come true for both pets and adopters alike.',textAlign: TextAlign.justify,style: TextStyle(fontSize: 16,color: Colors.white),
+                          ),
+                          ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 50,),
+                const SizedBox(height: 40,),
                 Container(
-                  height: 150,
+                  height: 110,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24.0),
@@ -55,10 +58,10 @@ class _HomePageState extends State<HomePage> {
                        SizedBox(width: 10,),
                       CircleAvatar(
                       backgroundImage: AssetImage('images/swikriti.jpg',),
-                      radius: 50,
+                      radius: 40,
                       ),
                       SizedBox(width:10),
-                      Text("Swikriti Suwal\nCEO\n986-359-4873\nKathmandu,Nepal",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 20),)
+                      Text("Swikriti Suwal\nCEO\n986-359-4873\nKathmandu,Nepal",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 17),)
                       
                     ],
                   ),

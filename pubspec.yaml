@@ -82,50 +82,7 @@ flutter:
     - images/slogan.png
     - images/closeupLogo.png
     - images/swikriti.jpg
-
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
+    - images/donationCat.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -140,10 +97,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
+  #   - family: Fredoka
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  #       - asset: fonts/Fredoka-Regular.ttf
+  #       - asset: fonts/Fredoka-Medium.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
