@@ -18,7 +18,7 @@ class _BellaState extends State<Bella> {
          );
     AlertDialog alert=AlertDialog(
       backgroundColor: const Color(0XFFBFFAFF),
-      title: const Text('Alert Dialogue'),
+      title: const Text('Notice'),
       content: const Text('You will be further contacted.'),
       actions: [
         okbtn,
