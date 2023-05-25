@@ -11,9 +11,9 @@ import 'package:flutter/material.dart';
 
 class _Home1State extends State<Home1> {
   List pages=[
-    HomePage(),
-    LandingDog(),
-    Donation(),
+    const HomePage(),
+    const LandingDog(),
+    const Donation(),
 
   
   ];
@@ -34,7 +34,9 @@ class _Home1State extends State<Home1> {
           onTap: onTap,
         currentIndex:currentIndex,
 
-        backgroundColor: Color(0XFFACBCFF),
+        backgroundColor: const Color(0XFF007283),
+        selectedItemColor: Colors.white, 
+        unselectedItemColor: Colors.grey, 
         items: 
       [
         BottomNavigationBarItem(

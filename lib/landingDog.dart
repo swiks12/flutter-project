@@ -44,7 +44,7 @@ class _LandingDogState extends State<LandingDog> {
                               height: 200,
                               width: 180,
                               decoration: BoxDecoration(
-                              color: const Color(0XFFA9A3EA),
+                              color: Color.fromARGB(255, 115, 186, 202),
                               borderRadius: BorderRadius.circular(24.0)
                               ),
                               child: Column(
@@ -63,7 +63,7 @@ class _LandingDogState extends State<LandingDog> {
                                     ElevatedButton(onPressed: (){
                                       Navigator.push(context,MaterialPageRoute(builder: (context)=>const Kale()));
                                     },style: ElevatedButton.styleFrom(
-                                      backgroundColor: const Color(0XFF4A467D)
+                                      backgroundColor: const Color(0XFF007283)
                                     ), child: const Text('View more'),
                                     
                                     ),
@@ -76,7 +76,7 @@ class _LandingDogState extends State<LandingDog> {
                               height: 200,
                               width: 180,
                               decoration: BoxDecoration(
-                              color: const Color(0XFFA9A3EA),
+                              color: Color.fromARGB(255, 115, 186, 202),
                               borderRadius: BorderRadius.circular(24.0)
                               ),
                               child: Column(
@@ -96,7 +96,7 @@ class _LandingDogState extends State<LandingDog> {
                                     ElevatedButton(onPressed: (){
                                       Navigator.push(context,MaterialPageRoute(builder: (context)=>const Bruno()));
                                     },style: ElevatedButton.styleFrom(
-                                      backgroundColor: const Color(0XFF4A467D)
+                                      backgroundColor: const Color(0XFF007283)
                                     ), child: const Text('View more'),
                                     ),
                                     )
@@ -115,7 +115,7 @@ class _LandingDogState extends State<LandingDog> {
                               height: 200,
                               width: 180,
                               decoration: BoxDecoration(
-                              color: const Color(0XFFA9A3EA),
+                              color: Color.fromARGB(255, 115, 186, 202),
                               borderRadius: BorderRadius.circular(24.0)
                               ),
                               child: Column(
@@ -135,7 +135,7 @@ class _LandingDogState extends State<LandingDog> {
                                     ElevatedButton(onPressed: (){
                                       Navigator.push(context,MaterialPageRoute(builder: (context)=>const Luna()));
                                     },style: ElevatedButton.styleFrom(
-                                      backgroundColor: const Color(0XFF4A467D)
+                                      backgroundColor: const Color(0XFF007283)
                                     ),
                                      child: const Text('View more'),
                                     
@@ -149,7 +149,7 @@ class _LandingDogState extends State<LandingDog> {
                               height: 200,
                               width: 180,
                               decoration: BoxDecoration(
-                              color: const Color(0XFFA9A3EA),
+                              color: Color.fromARGB(255, 115, 186, 202),
                               borderRadius: BorderRadius.circular(24.0)
                               ),
                               child: Column(
@@ -169,7 +169,7 @@ class _LandingDogState extends State<LandingDog> {
                                       Navigator.push(context,MaterialPageRoute(builder: (context)=>const Bella()));
                                     }, 
                                     style: ElevatedButton.styleFrom(
-                                      backgroundColor: const Color(0XFF4A467D)
+                                      backgroundColor: const Color(0XFF007283)
                                     ),
                                     child: const Text('View more'),
                                     )

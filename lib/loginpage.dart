@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
       return Scaffold(
       backgroundColor: const Color(0XFFFDF4F5),
       appBar: AppBar(title: const Text('Login'),
-      backgroundColor: const Color(0XFFACBCFF),),
+      backgroundColor: const Color(0XFF26A6B8),),
       body:  Container(
         decoration: const BoxDecoration(
                     image: DecorationImage(
@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
                       key: _formkey,
                       child:Column(
                         children: [
-                          const SizedBox(height: 50),
+                          const SizedBox(height: 30),
                           TextFormField(
                             onSaved:(newValue){
                               name=newValue!;
@@ -46,7 +46,9 @@ class _LoginState extends State<Login> {
                             decoration: const InputDecoration(
                               labelText: 'Username',
                               hintText: 'Enter username',
-                              border: OutlineInputBorder(),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(24.0),)
+                              ),
                             ),
                           ),
                           const SizedBox(height: 50),
@@ -61,7 +63,9 @@ class _LoginState extends State<Login> {
                             decoration: const InputDecoration(
                               labelText: 'Password',
                               hintText: 'Enter password',
-                              border: OutlineInputBorder(),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(24.0))
+                              ),
                             )
                           ),
                           const SizedBox(height: 50),
@@ -75,7 +79,7 @@ class _LoginState extends State<Login> {
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: name)));//name pass gareko garnalai
                                final snackBar= SnackBar(content: Text('Logged In'),
                                 duration: Duration(seconds: 1),
-                                backgroundColor: const Color(0XFFACBCFF),
+                                backgroundColor: const Color(0XFF26A6B8),
                                 );
                                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
                                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const Home1()));
@@ -83,7 +87,10 @@ class _LoginState extends State<Login> {
                               
                             },
                             style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0XFFACBCFF)
+                              shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              ),
+                            backgroundColor: const Color(0XFF26A6B8)
                                               ),
                                                child:const Text('Login',
                             style:TextStyle(

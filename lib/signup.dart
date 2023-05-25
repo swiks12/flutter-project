@@ -16,7 +16,7 @@ class _SignUpState extends State<SignUp> {
       return Scaffold(
       backgroundColor: const Color(0XFFFDF4F5),
       appBar: AppBar(title: const Text('Signup'),
-      backgroundColor: const Color(0XFFE8A0BF),),
+      backgroundColor: const Color(0XFF1896C3),),
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
@@ -46,7 +46,9 @@ class _SignUpState extends State<SignUp> {
                             decoration: const InputDecoration(
                               labelText: 'Name',
                               hintText: 'Enter name',
-                              border: OutlineInputBorder(),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(24.0))
+                              ),
                             ),
                           ),
                           const SizedBox(height: 50),
@@ -61,7 +63,9 @@ class _SignUpState extends State<SignUp> {
                             decoration: const InputDecoration(
                               labelText: 'Contact',
                               hintText: 'Enter contact info',
-                              border: OutlineInputBorder(),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(24.0))
+                              ),
                             )
                           ),
                           const SizedBox(height: 50),
@@ -76,7 +80,9 @@ class _SignUpState extends State<SignUp> {
                             decoration: const InputDecoration(
                               labelText: 'Email',
                               hintText: 'Enter email address',
-                              border: OutlineInputBorder(),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.all(Radius.circular(24.0))
+                              ),
                             )
                           ),
                           const SizedBox(height: 50),
@@ -97,7 +103,10 @@ class _SignUpState extends State<SignUp> {
                               }
                             }, 
                             style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0XFFE8A0BF)
+                              shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              ),
+                            backgroundColor: const Color(0XFF1896C3)
                                             ),
                                             child: const Text('SignUp',
                             style: TextStyle(
