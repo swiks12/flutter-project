@@ -10,7 +10,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   final _formkey=GlobalKey<FormState>();
-  String? name;
+
   @override
   Widget build(BuildContext context) {
     
@@ -34,9 +34,7 @@ class _LoginState extends State<Login> {
                         children: [
                           const SizedBox(height: 30),
                           TextFormField(
-                            onSaved:(newValue){
-                              name=newValue!;
-                            },
+                            
                             validator: (value) {
                               if (value==null || value.isEmpty){
                                 return "*required";
@@ -75,14 +73,14 @@ class _LoginState extends State<Login> {
                             child: ElevatedButton(
                             onPressed: (){
                               if(_formkey.currentState!.validate()){
-                                _formkey.currentState!.save();
+                                // _formkey.currentState!.save();
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: name)));//name pass gareko garnalai
                                final snackBar= SnackBar(content: Text('Logged In'),
                                 duration: Duration(seconds: 1),
                                 backgroundColor: const Color(0XFF26A6B8),
                                 );
                                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                                 Navigator.push(context,MaterialPageRoute(builder: (context)=>const Home1()));
+                                 Navigator.push(context,MaterialPageRoute(builder: (context)=> const Home1()));
                               }
                               
                             },

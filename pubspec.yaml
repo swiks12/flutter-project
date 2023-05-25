@@ -64,20 +64,10 @@ flutter:
     - images/logo1.png
     - images/signUp.png
     - images/login.png
-    - images/orangeDog.jpg
-    - images/carDog.jpg
     - images/paw1end.png
     - images/paw.png
-    - images/picture.jpg
     - images/moneyPig.jpg
     - images/pawPrintForHome.png
-    - images/envelope.png
-    - images/telephone.png
-    - images/pinkLocation.jpg
-    - images/bowl.png
-    - images/pawFinal.png
-    - images/adopt.png
-    - images/adoption.png
     - images/bella.jpg
     - images/kale.jpg
     - images/myLuna.jpg
@@ -87,10 +77,13 @@ flutter:
     - images/finalLogo.png
     - images/whiteAndBlackDog.jpg
     - images/bgRemovedLogoComplete.png
-    - images/happyDogs.jpg
     - images/dogLookingUp.jpg
     - images/dogFinal.jpg
     - images/slogan.png
+    - images/closeupLogo.png
+    - images/swikriti.jpg
+
+
     
 
 

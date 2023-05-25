@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
   
@@ -21,124 +22,49 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 290,
-                  width: double.infinity,
-                  decoration: const BoxDecoration(
-                     image: DecorationImage(
-                      image: AssetImage("images/logo1.png"),
-                      fit: BoxFit.cover,
-                      ),
-                  ),
-                  
-                ),
-                const SizedBox(height: 50,),
-                Container(
-                  height: 60,
+                  height: 350,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24.0),
-                    color:  const Color(0XFFACBCFF)
+                    color:  const Color(0XFF007283)
                   ),
-                  child: Row(
-                    children: [
-                       const SizedBox(width: 10,),
+                  child: Column(
+                    children: const [
+                      SizedBox(height:10),
                       CircleAvatar(
-                      backgroundImage: AssetImage('images/pawFinal.png',),
-                      radius: 20,
+                        radius: 90,
+                        backgroundImage: AssetImage('images/closeupLogo.png'),
                       ),
-                      const SizedBox(width:10),
-                      Container(
-                        child: const Text('Matching pets with loving families since 2015',style: TextStyle(fontSize: 16),),
-                      )
+                      SizedBox(height:20),
+                      Text('data')
+
                       
                     ],
                   ),
                 ),
-                const SizedBox(height: 8,),
+                const SizedBox(height: 50,),
                 Container(
-                  height: 60,
+                  height: 150,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24.0),
-                    color:  const Color(0XFFACBCFF)
+                    color:  const Color(0XFF007283)
                   ),
                   child: Row(
-                    children: [
+                    children:const [
                        SizedBox(width: 10,),
                       CircleAvatar(
-                      backgroundImage: AssetImage('images/bowl.png',),
-                      radius: 20,
+                      backgroundImage: AssetImage('images/swikriti.jpg',),
+                      radius: 50,
                       ),
-                      const SizedBox(width:10),
-                      Text('50+ rescued animals in shelter',style: TextStyle(fontSize: 16),)
+                      SizedBox(width:10),
+                      Text("Swikriti Suwal\nCEO\n986-359-4873\nKathmandu,Nepal",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 20),)
+                      
                     ],
                   ),
                 ),
-                const SizedBox(height: 8,),
-                Container(
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24.0),
-                    color:  const Color(0XFFACBCFF)
-                  ),
-                  child: Row(
-                    children: [
-                       SizedBox(width: 10,),
-                      CircleAvatar(
-                      backgroundImage: AssetImage('images/pinkLocation.jpg',),
-                      radius: 20,
-                      ),
-                       const SizedBox(width:10),
-                      Text('Located at heart of Kathmandu New road',style: TextStyle(fontSize: 16),)
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 8,),
-                Container(
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24.0),
-                    color:  const Color(0XFFACBCFF)
-                  ),
-                  child: Row(
-                    children: [
-                       SizedBox(width: 10,),
-                      CircleAvatar(
-                      backgroundImage: AssetImage('images/telephone.png',),
-                      radius: 20,
-                      ),
-                       const SizedBox(width:10),
-                      Text('986-359-4873',style: TextStyle(fontSize: 18),)
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 8,),
-                Container(
-                  height: 60,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24.0),
-                    color:  const Color(0XFFACBCFF)
-                  ),
-                  child: Row(
-                    children: [
-                       SizedBox(width: 10,),
-                      CircleAvatar(
-                      backgroundImage: AssetImage('images/envelope.png',),
-                      radius: 20,
-                      ),
-                       const SizedBox(width:10),
-                      Text('foreverHomes@gmail.com',style: TextStyle(fontSize: 16),)
-                    ],
-                  ),
-                ),
-
                 
-      
               ],
-        
           ),
           ),
           ),

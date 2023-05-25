@@ -35,9 +35,9 @@ class _SignUpState extends State<SignUp> {
                         children: [
                           // const SizedBox(height: 50),
                           TextFormField(
-                            onSaved:(newValue){
-                              name=newValue!;
-                            },
+                            // onSaved:(newValue){
+                            //   name=newValue!;
+                            // },
                             validator: (value) {
                               if (value==null || value.isEmpty){
                                 return "*required";
@@ -93,14 +93,15 @@ class _SignUpState extends State<SignUp> {
                             child: ElevatedButton(
                             onPressed: (){
                               if(_formkey.currentState!.validate()){
-                                _formkey.currentState!.save();
-                                // Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: name)));//name pass gareko garnalai
+                                // _formkey.currentState!.save();
+                                
                                  final snackBar= SnackBar(content: Text('Signed In'),
                                   duration: Duration(seconds: 1),
                                   backgroundColor: const Color(0XFF1896C3),
                                   );
                                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                                   Navigator.push(context,MaterialPageRoute(builder: (context)=>const Home1()));
+                                  
                               }
                             }, 
                             style: ElevatedButton.styleFrom(

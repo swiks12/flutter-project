@@ -37,7 +37,7 @@ class _Home1State extends State<Home1> {
         backgroundColor: const Color(0XFF007283),
         selectedItemColor: Colors.white, 
         unselectedItemColor: Colors.grey, 
-        items: 
+        items: const
       [
         BottomNavigationBarItem(
           icon:Icon(Icons.info),
