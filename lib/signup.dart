@@ -1,5 +1,6 @@
 import 'package:adopt_me/firstnavpage.dart';
 import 'package:flutter/material.dart';
+
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
 
@@ -96,7 +97,7 @@ class _SignUpState extends State<SignUp> {
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: name)));//name pass gareko garnalai
                                  final snackBar= SnackBar(content: Text('Signed In'),
                                   duration: Duration(seconds: 1),
-                                  backgroundColor: const Color(0XFFE8A0BF),
+                                  backgroundColor: const Color(0XFF1896C3),
                                   );
                                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                                   Navigator.push(context,MaterialPageRoute(builder: (context)=>const Home1()));

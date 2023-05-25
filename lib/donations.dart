@@ -19,7 +19,7 @@ class _DonationState extends State<Donation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Donations'),
-      backgroundColor: const Color(0XFFACBCFF),),
+      backgroundColor: const Color(0XFF007283),),
       body: Container(
          decoration: const BoxDecoration(
                       image: DecorationImage(
@@ -34,7 +34,7 @@ class _DonationState extends State<Donation> {
               children: [
                 const SizedBox(height: 10,),
                TextField(
-                style: TextStyle(
+                style: const TextStyle(
                 ),
                     controller: mycontroller,
                     keyboardType: TextInputType.number,
@@ -52,16 +52,20 @@ class _DonationState extends State<Donation> {
                   width: double.infinity,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0XFFACBCFF)
+                      shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              ),
+                      backgroundColor: const Color(0XFF007283)
                     ),
                     onPressed: (){
                     setState(() {
                             amount=mycontroller.text;
                             amount.isEmpty? _validate=true :_validate=false;
                           });
-                          
-                          
-                  }, child: const Text('Donate')),
+                          final snackBar=SnackBar(content: Text('Donation Succesful!'),duration: Duration(seconds: 1),
+                          backgroundColor:Color.fromARGB(255, 7, 124, 150),);
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                  }, child: const Text('Donate',style: TextStyle(fontSize: 20),),),
                 ),
                 const SizedBox(height: 40,),
                 Text('Donated amount: $amount',style: const TextStyle(

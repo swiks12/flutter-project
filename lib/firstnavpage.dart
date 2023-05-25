@@ -1,6 +1,6 @@
 import 'package:adopt_me/donations.dart';
 import 'package:adopt_me/home.dart';
-import 'package:adopt_me/landingDog.dart';
+import 'package:adopt_me/landing_dog.dart';
 import 'package:flutter/material.dart';
  class Home1 extends StatefulWidget {
   const Home1({super.key});

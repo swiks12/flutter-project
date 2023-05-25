@@ -2,6 +2,7 @@ import 'package:adopt_me/loginpage.dart';
 import 'package:adopt_me/signup.dart';
 import 'package:flutter/material.dart';
 
+
 class LoginAndSignup extends StatefulWidget {
   const LoginAndSignup({super.key});
 
